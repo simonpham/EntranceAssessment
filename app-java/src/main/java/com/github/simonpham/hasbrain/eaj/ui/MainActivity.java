@@ -1,4 +1,4 @@
-package com.github.simonpham.hasbrain.eaj;
+package com.github.simonpham.hasbrain.eaj.ui;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.github.simonpham.hasbrain.eaj.R;
 
 public class MainActivity extends AppCompatActivity {
 
