@@ -1,4 +1,4 @@
-package com.github.simonpham.hasbrain.eaj.ui.browser;
+package com.github.simonpham.hasbrain.eaj.browser;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;

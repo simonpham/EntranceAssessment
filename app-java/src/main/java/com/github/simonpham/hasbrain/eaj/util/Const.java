@@ -1,4 +1,4 @@
-package com.github.simonpham.hasbrain.eaj;
+package com.github.simonpham.hasbrain.eaj.util;
 
 /**
  * Created by Simon Pham on 5/26/18.

@@ -1,4 +1,4 @@
-package com.github.simonpham.hasbrain.eaj.ui.adapter;
+package com.github.simonpham.hasbrain.eaj.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,12 +11,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.github.simonpham.hasbrain.eaj.R;
-import com.github.simonpham.hasbrain.eaj.ui.browser.BrowserActivity;
-import com.github.simonpham.hasbrain.eaj.ui.model.Article;
+import com.github.simonpham.hasbrain.eaj.browser.BrowserActivity;
+import com.github.simonpham.hasbrain.eaj.model.Article;
 
 import java.util.List;
 
-import static com.github.simonpham.hasbrain.eaj.Const.NO_IMAGE;
+import static com.github.simonpham.hasbrain.eaj.util.Const.NO_IMAGE;
 
 /**
  * Created by Simon Pham on 5/26/18.

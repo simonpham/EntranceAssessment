@@ -1,6 +1,6 @@
-package com.github.simonpham.hasbrain.eaj.ui.model;
+package com.github.simonpham.hasbrain.eaj.model;
 
-import static com.github.simonpham.hasbrain.eaj.Const.NO_IMAGE;
+import static com.github.simonpham.hasbrain.eaj.util.Const.NO_IMAGE;
 
 /**
  * Created by Simon Pham on 5/26/18.

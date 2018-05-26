@@ -1,4 +1,4 @@
-package com.github.simonpham.hasbrain.eaj.ui;
+package com.github.simonpham.hasbrain.eaj.activity;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -12,10 +12,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.github.simonpham.hasbrain.eaj.R;
-import com.github.simonpham.hasbrain.eaj.ui.adapter.SectionOneAdapter;
-import com.github.simonpham.hasbrain.eaj.ui.adapter.SectionThreeAdapter;
-import com.github.simonpham.hasbrain.eaj.ui.adapter.SectionTwoAdapter;
-import com.github.simonpham.hasbrain.eaj.ui.model.Article;
+import com.github.simonpham.hasbrain.eaj.adapter.SectionOneAdapter;
+import com.github.simonpham.hasbrain.eaj.adapter.SectionThreeAdapter;
+import com.github.simonpham.hasbrain.eaj.adapter.SectionTwoAdapter;
+import com.github.simonpham.hasbrain.eaj.model.Article;
 
 import java.util.ArrayList;
 import java.util.List;
