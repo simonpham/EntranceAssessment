@@ -7,5 +7,5 @@ package com.github.simonpham.hasbrain.eaj;
 
 public class Const {
 
-    public int NO_IMAGE = -1;
+    public static final int NO_IMAGE = -1;
 }
