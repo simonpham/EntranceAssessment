@@ -53,6 +53,12 @@ class MainActivity : AppCompatActivity() {
         false
     }
 
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        menuInflater.inflate(R.menu.action_bar, menu)
+        return true
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -60,6 +66,11 @@ class MainActivity : AppCompatActivity() {
 
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
 
+        initialize()
+        importSampleData()
+    }
+
+    private fun initialize() {
         val lm1 = LinearLayoutManager(applicationContext, LinearLayoutManager.HORIZONTAL, false)
         recyclerView1.layoutManager = lm1
         recyclerView1.adapter = adapterSec1
@@ -71,27 +82,56 @@ class MainActivity : AppCompatActivity() {
         val lm3 = LinearLayoutManager(applicationContext, LinearLayoutManager.VERTICAL, false)
         recyclerView3.layoutManager = lm3
         recyclerView3.adapter = adapterSec3
-
-        val dataSec1 = ArrayList<SectionOne>()
-        dataSec1.add(SectionOne("Introduction to Data Engineering", R.drawable.sec1_1))
-        dataSec1.add(SectionOne("How to Become a Data Engineer", R.drawable.sec1_2))
-        adapterSec1.setData(dataSec1)
-
-        val dataSec2 = ArrayList<SectionTwo>()
-        dataSec2.add(SectionTwo("Introduction to Data Engineering", R.drawable.sec1_1))
-        dataSec2.add(SectionTwo("How to Become a Data Engineer", R.drawable.sec1_2))
-        adapterSec2.setData(dataSec2)
-
-        val dataSec3 = ArrayList<SectionThree>()
-        dataSec3.add(SectionThree("Introduction to Data Engineering", R.drawable.sec1_1))
-        dataSec3.add(SectionThree("How to Become a Data Engineer", R.drawable.sec1_2))
-        adapterSec3.setData(dataSec3)
-
     }
 
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.action_bar, menu)
-        return true
+    private fun importSampleData() {
+        val dataSec1 = ArrayList<SectionOne>()
+        val dataSec2 = ArrayList<SectionTwo>()
+        val dataSec3 = ArrayList<SectionThree>()
+
+        // Data Engineering from Scratch's articles
+        dataSec1.add(
+                SectionOne("Introduction to Data Engineering",
+                        R.drawable.sec1_1,
+                        "https://github.com/hopelessoptimism/data-engineering-101"
+                ))
+        dataSec1.add(
+                SectionOne(
+                        "How to Become a Data Engineer",
+                        R.drawable.sec1_2,
+                        "https://dzone.com/articles/how-to-become-a-data-engineer"
+                ))
+
+        // Continue learning's articles
+        dataSec2.add(
+                SectionTwo(
+                        "GAN with Keras: Application to Image Deblurring",
+                        R.drawable.sec2_1,
+                        "https://blog.sicara.com/keras-generative-adversarial-networks-image-deblurring-45e3ab6977b5"
+                ))
+        dataSec2.add(
+                SectionTwo(
+                        "What are Bloom filters?",
+                        R.drawable.sec2_2,
+                        "https://blog.medium.com/what-are-bloom-filters-1ec2a50c68ff"
+                ))
+
+        // Machine Learning's articles
+        dataSec3.add(
+                SectionThree(
+                        "Understanding Machine Learning - with pictures of cats and dogs",
+                        R.drawable.sec3_1,
+                        "https://medium.com/velocity-vlcty/understanding-machine-learning-with-pictures-of-cats-and-dogs-536e1c712d52"
+                ))
+        dataSec3.add(
+                SectionThree(
+                        "Machine Learning for Humans \uD83E\uDD16\uD83D\uDC76",
+                        R.drawable.sec3_2,
+                        "https://medium.com/machine-learning-for-humans/why-machine-learning-matters-6164faf1df12"
+                ))
+
+        adapterSec1.setData(dataSec1)
+        adapterSec2.setData(dataSec2)
+        adapterSec3.setData(dataSec3)
     }
 }
