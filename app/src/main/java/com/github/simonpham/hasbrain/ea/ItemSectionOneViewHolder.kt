@@ -13,7 +13,7 @@ import kotlinx.android.synthetic.main.item_section_one.view.*
  * Email: khang.neon.1997@gmail.com
  */
 
-data class SectionOne(val tag: Int, val title: String, val idImage: Int) : AdapterModel
+data class SectionOne(val title: String, val idImage: Int) : AdapterModel
 
 class ItemSectionOneViewHolder(itemView: View) : CustomViewHolder<SectionOne>(itemView) {
 

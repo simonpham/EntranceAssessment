@@ -3,10 +3,17 @@ package com.github.simonpham.hasbrain.ea
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
+import android.support.v7.widget.LinearLayoutManager
 import android.view.Menu
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+
+    private val adapter: MixAdapter by lazy {
+        MixAdapter.Builder {
+            withModel<SectionOne> { ItemSectionOneViewHolder.Factory() }
+        }.build()
+    }
 
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
@@ -41,7 +48,23 @@ class MainActivity : AppCompatActivity() {
 
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
 
-//        recyclerView.adapter =
+        val lm1 = LinearLayoutManager(applicationContext, LinearLayoutManager.HORIZONTAL, false)
+        recyclerView1.layoutManager = lm1
+        recyclerView1.adapter = adapter
+
+        val lm2 = LinearLayoutManager(applicationContext, LinearLayoutManager.HORIZONTAL, false)
+        recyclerView2.layoutManager = lm2
+        recyclerView2.adapter = adapter
+
+        val lm3 = LinearLayoutManager(applicationContext, LinearLayoutManager.VERTICAL, false)
+        recyclerView3.layoutManager = lm3
+        recyclerView3.adapter = adapter
+
+        val data = ArrayList<SectionOne>()
+        data.add(SectionOne("Introduction to Data Engineering", R.drawable.sec1_1))
+
+        adapter.setData(data)
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
