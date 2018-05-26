@@ -34,9 +34,14 @@ class ItemSectionTwoViewHolder(itemView: View) : CustomViewHolder<SectionTwo>(it
     override fun bind(model: SectionTwo, pos: Int) {
         model.apply {
             tvTitle.text = title
-            ivImage.setImageDrawable(getImage(idImage))
             tvName.text = "Simon Pham"
             tvTime.text = "3d ago"
+
+            if (idImage == NO_IMAGE) {
+                ivImage.visibility = View.GONE
+            } else {
+                ivImage.setImageDrawable(getImage(idImage))
+            }
         }
     }
 
