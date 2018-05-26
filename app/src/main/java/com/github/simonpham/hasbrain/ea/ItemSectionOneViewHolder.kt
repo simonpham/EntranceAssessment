@@ -1,8 +1,6 @@
 package com.github.simonpham.hasbrain.ea
 
 import android.graphics.drawable.Drawable
-import android.support.v4.content.ContextCompat
-import android.support.v4.graphics.drawable.DrawableCompat
 import android.support.v7.content.res.AppCompatResources
 import android.view.View
 import kotlinx.android.synthetic.main.item_section_one.view.*
@@ -23,9 +21,15 @@ class ItemSectionOneViewHolder(itemView: View) : CustomViewHolder<SectionOne>(it
     private val tvTime = itemView.tvTime
 
     private val btnFacebook = itemView.btnFacebook
+    private val btnTwitter = itemView.btnTwitter
+    private val btnGithub = itemView.btnGithub
+    private val btnSave = itemView.btnSave
 
     init {
-        btnFacebook.setOnClickListener {  }
+        btnFacebook.setOnClickListener { }
+        btnTwitter.setOnClickListener { }
+        btnGithub.setOnClickListener { }
+        btnSave.setOnClickListener {  }
     }
 
     override fun bind(model: SectionOne, pos: Int) {
