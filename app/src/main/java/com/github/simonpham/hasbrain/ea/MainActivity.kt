@@ -147,6 +147,18 @@ class MainActivity : AppCompatActivity() {
                         R.drawable.sec3_2,
                         "https://medium.com/machine-learning-for-humans/why-machine-learning-matters-6164faf1df12"
                 ))
+        dataSec3.add(
+                SectionThree(
+                        "Cheat Sheets for AI, Neural Networks, Machine Learning, Deep Learning & Big Data",
+                        NO_IMAGE,
+                        "https://becominghuman.ai/cheat-sheets-for-ai-neural-networks-machine-learning-deep-learning-big-data-678c51b4b463"
+                ))
+        dataSec3.add(
+                SectionThree(
+                        "Machine Learning is Fun!",
+                        R.drawable.sec3_3,
+                        "https://medium.com/@ageitgey/machine-learning-is-fun-80ea3ec3c471"
+                ))
 
         adapterSec1.setData(dataSec1)
         adapterSec2.setData(dataSec2)
