@@ -62,6 +62,7 @@ class MainActivity : AppCompatActivity() {
 
         val data = ArrayList<SectionOne>()
         data.add(SectionOne("Introduction to Data Engineering", R.drawable.sec1_1))
+        data.add(SectionOne("How to Become a Data Engineer", R.drawable.sec1_2))
 
         adapter.setData(data)
 
