@@ -56,6 +56,7 @@
             android:id="@+id/cardAvatar"
             android:layout_width="40dp"
             android:layout_height="40dp"
+            app:cardBackgroundColor="@color/transparent"
             app:cardCornerRadius="20dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent">
