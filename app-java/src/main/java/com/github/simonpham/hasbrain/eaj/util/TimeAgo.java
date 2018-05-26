@@ -38,7 +38,7 @@ public class TimeAgo {
             return toDays(time) + "d ago";
         }
 
-        return new java.text.SimpleDateFormat("HH:mm:ss dd/MM/yyyy ").format(new java.util.Date(time * 1000));
+        return new java.text.SimpleDateFormat("dd/MM/yy ").format(new java.util.Date(time * 1000));
     }
 
     @SuppressLint("SimpleDateFormat")
