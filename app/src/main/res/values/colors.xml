@@ -9,4 +9,5 @@
 
     <color name="color_title_header">#003167</color>
     <color name="color_title_summary">#80000000</color>
+    <color name="black">#000000</color>
 </resources>

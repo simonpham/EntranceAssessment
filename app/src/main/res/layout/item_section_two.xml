@@ -21,7 +21,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:maxLines="3"
-        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/black"
+        android:textSize="18sp"
         app:layout_constraintLeft_toLeftOf="@id/image"
         app:layout_constraintRight_toRightOf="@id/image"
         app:layout_constraintTop_toBottomOf="@id/image"
@@ -31,6 +32,7 @@
         android:id="@+id/bottomLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:paddingTop="6dp"
         android:orientation="horizontal"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -39,10 +41,10 @@
 
         <android.support.v7.widget.CardView
             android:id="@+id/btnAvatar"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:background="?selectableItemBackgroundBorderless"
-            app:cardCornerRadius="24dp"
+            app:cardCornerRadius="20dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -58,16 +60,17 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="6dp"
+            app:layout_constraintBottom_toTopOf="@id/tvTime"
             app:layout_constraintLeft_toRightOf="@+id/btnAvatar"
             app:layout_constraintRight_toLeftOf="@+id/btnSave"
-            app:layout_constraintTop_toTopOf="@+id/btnAvatar"
+            app:layout_constraintTop_toTopOf="parent"
             tool:text="Simon Pham" />
 
         <TextView
             android:id="@+id/tvTime"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="@+id/tvName"
             app:layout_constraintRight_toRightOf="@+id/tvName"
             app:layout_constraintTop_toBottomOf="@+id/tvName"
