@@ -5,7 +5,7 @@ import android.support.v7.content.res.AppCompatResources
 import android.view.View
 import kotlinx.android.synthetic.main.item_section_one.view.*
 
-data class SectionOne(val title: String, val idImage: Int) : AdapterModel
+data class SectionOne(val title: String, val idImage: Int, val articleUrl: String) : AdapterModel
 
 class ItemSectionOneViewHolder(itemView: View) : CustomViewHolder<SectionOne>(itemView) {
 
