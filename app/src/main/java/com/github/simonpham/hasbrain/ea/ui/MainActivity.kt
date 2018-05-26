@@ -137,12 +137,6 @@ class MainActivity : AppCompatActivity() {
                 ))
         dataSec2.add(
                 SectionTwo(
-                        "Custom Data Analytics And Data Engineering",
-                        NO_IMAGE,
-                        "https://medium.com/@SeattleDataGuy/custom-data-analytics-and-data-engineering-9d85c2033965"
-                ))
-        dataSec2.add(
-                SectionTwo(
                         "The Data Engineering Ecosystem: An Interactive Map",
                         R.drawable.sec2_3,
                         "https://blog.insightdatascience.com/the-data-engineering-ecosystem-an-interactive-map-b682627c2534"
@@ -152,6 +146,12 @@ class MainActivity : AppCompatActivity() {
                         "The Future of Data Engineering",
                         R.drawable.sec2_4,
                         "https://medium.com/dima-korolev/the-future-of-data-engineering-3e3cb5dc3293"
+                ))
+        dataSec2.add(
+                SectionTwo(
+                        "Custom Data Analytics And Data Engineering",
+                        R.drawable.sec2_5,
+                        "https://medium.com/@SeattleDataGuy/custom-data-analytics-and-data-engineering-9d85c2033965"
                 ))
 
         // Machine Learning's articles
