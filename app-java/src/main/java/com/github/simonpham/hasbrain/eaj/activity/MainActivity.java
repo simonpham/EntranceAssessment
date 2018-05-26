@@ -125,9 +125,9 @@ public class MainActivity extends AppCompatActivity {
                         "How to Become a Data Engineer",
                         R.drawable.sec1_2,
                         "https://dzone.com/articles/how-to-become-a-data-engineer",
-                        "Simon Pham",
-                        R.drawable.avatar,
-                        1527344544
+                        "Max",
+                        R.drawable.avatar3,
+                        1527144544
                 ));
         sectionOneArticles.add(
                 new Article(
@@ -163,18 +163,18 @@ public class MainActivity extends AppCompatActivity {
                         "GAN with Keras: Application to Image Deblurring",
                         R.drawable.sec2_1,
                         "https://blog.sicara.com/keras-generative-adversarial-networks-image-deblurring-45e3ab6977b5",
-                        "Simon Pham",
-                        R.drawable.avatar,
-                        1527344544
+                        "Max",
+                        R.drawable.avatar3,
+                        1527144544
                 ));
         sectionTwoArticles.add(
                 new Article(
                         "What are Bloom filters?",
                         R.drawable.sec2_2,
                         "https://blog.medium.com/what-are-bloom-filters-1ec2a50c68ff",
-                        "Simon Pham",
-                        R.drawable.avatar,
-                        1527344544
+                        "Jack",
+                        R.drawable.avatar2,
+                        1526998942
                 ));
         sectionTwoArticles.add(
                 new Article(
@@ -210,9 +210,9 @@ public class MainActivity extends AppCompatActivity {
                         "Understanding Machine Learning - with pictures of cats and dogs",
                         R.drawable.sec3_1,
                         "https://medium.com/velocity-vlcty/understanding-machine-learning-with-pictures-of-cats-and-dogs-536e1c712d52",
-                        "Simon Pham",
-                        R.drawable.avatar,
-                        1527344544
+                        "Max",
+                        R.drawable.avatar3,
+                        1527300544
                 ));
         sectionThreeArticles.add(
                 new Article(
@@ -221,16 +221,16 @@ public class MainActivity extends AppCompatActivity {
                         "https://medium.com/machine-learning-for-humans/why-machine-learning-matters-6164faf1df12",
                         "Simon Pham",
                         R.drawable.avatar,
-                        1527344544
+                        1527044544
                 ));
         sectionThreeArticles.add(
                 new Article(
                         "Cheat Sheets for AI, Neural Networks, Machine Learning, Deep Learning & Big Data",
                         NO_IMAGE,
                         "https://becominghuman.ai/cheat-sheets-for-ai-neural-networks-machine-learning-deep-learning-big-data-678c51b4b463",
-                        "Simon Pham",
-                        R.drawable.avatar,
-                        1527344544
+                        "Jack",
+                        R.drawable.avatar2,
+                        1527244544
                 ));
         sectionThreeArticles.add(
                 new Article(
