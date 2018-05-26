@@ -28,9 +28,10 @@ class ItemSectionOneViewHolder(itemView: View) : CustomViewHolder<SectionOne>(it
     private val ivImage = itemView.image
     private val tvTime = itemView.tvTime
 
+    private val btnFacebook = itemView.btnFacebook
+
     init {
-        itemView.setOnClickListener {
-        }
+        btnFacebook.setOnClickListener {  }
     }
 
     override fun bind(model: SectionOne, pos: Int) {

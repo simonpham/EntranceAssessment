@@ -40,8 +40,6 @@
             android:layout_height="48dp"
             android:layout_gravity="center"
             android:background="?selectableItemBackgroundBorderless"
-            android:clickable="true"
-            android:focusable="true"
             android:src="@drawable/ic_facebook" />
 
         <ImageView
@@ -50,8 +48,6 @@
             android:layout_height="48dp"
             android:layout_gravity="center"
             android:background="?selectableItemBackgroundBorderless"
-            android:clickable="true"
-            android:focusable="true"
             android:src="@drawable/ic_twitter" />
 
         <ImageView
@@ -60,8 +56,6 @@
             android:layout_height="48dp"
             android:layout_gravity="center"
             android:background="?selectableItemBackgroundBorderless"
-            android:clickable="true"
-            android:focusable="true"
             android:src="@drawable/ic_github" />
 
         <Space
@@ -82,8 +76,6 @@
             android:layout_height="36dp"
             android:layout_gravity="center"
             android:background="?selectableItemBackgroundBorderless"
-            android:clickable="true"
-            android:focusable="true"
             android:src="@drawable/ic_bookmark_plus" />
 
     </LinearLayout>
