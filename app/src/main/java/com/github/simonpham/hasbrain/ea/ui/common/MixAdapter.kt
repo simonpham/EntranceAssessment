@@ -1,4 +1,4 @@
-package com.github.simonpham.hasbrain.ea
+package com.github.simonpham.hasbrain.ea.ui.common
 
 import android.support.annotation.LayoutRes
 import android.support.v7.util.DiffUtil

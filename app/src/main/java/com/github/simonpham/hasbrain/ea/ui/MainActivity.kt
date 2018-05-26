@@ -1,10 +1,12 @@
-package com.github.simonpham.hasbrain.ea
+package com.github.simonpham.hasbrain.ea.ui
 
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.view.Menu
+import com.github.simonpham.hasbrain.ea.*
+import com.github.simonpham.hasbrain.ea.ui.common.MixAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

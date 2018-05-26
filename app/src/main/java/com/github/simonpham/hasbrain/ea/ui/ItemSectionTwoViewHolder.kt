@@ -1,10 +1,13 @@
-package com.github.simonpham.hasbrain.ea
+package com.github.simonpham.hasbrain.ea.ui
 
 import android.graphics.drawable.Drawable
-import android.support.v4.content.ContextCompat
-import android.support.v4.graphics.drawable.DrawableCompat
 import android.support.v7.content.res.AppCompatResources
 import android.view.View
+import com.github.simonpham.hasbrain.ea.NO_IMAGE
+import com.github.simonpham.hasbrain.ea.R
+import com.github.simonpham.hasbrain.ea.ui.common.AdapterModel
+import com.github.simonpham.hasbrain.ea.ui.common.CustomViewHolder
+import com.github.simonpham.hasbrain.ea.ui.common.ViewHolderFactory
 import kotlinx.android.synthetic.main.item_section_two.view.*
 
 data class SectionTwo(val title: String, val idImage: Int, val articleUrl: String) : AdapterModel

@@ -1,4 +1,4 @@
-package com.github.simonpham.hasbrain.ea
+package com.github.simonpham.hasbrain.ea.ui.common
 
 import android.support.v7.widget.RecyclerView
 import android.view.View
