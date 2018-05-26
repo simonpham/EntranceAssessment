@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Context context;
     private Toolbar toolbar;
+    private BottomNavigationView navigation;
 
     private RecyclerView recyclerView1;
     private RecyclerView recyclerView2;
@@ -72,31 +73,30 @@ public class MainActivity extends AppCompatActivity {
         context = this;
 
         bindView();
-        setSupportActionBar(toolbar);
-
-        BottomNavigationView navigation = findViewById(R.id.navigation);
-        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-
         addExampleData();
         initialize();
     }
 
     private void initialize() {
+        setSupportActionBar(toolbar);
+        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
         LinearLayoutManager lm1 = new LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false);
         recyclerView1.setLayoutManager(lm1);
-        recyclerView1.setAdapter(new SectionOneAdapter(this, sectionOneArticles));
+        recyclerView1.setAdapter(new SectionOneAdapter(context, sectionOneArticles));
 
         LinearLayoutManager lm2 = new LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false);
         recyclerView2.setLayoutManager(lm2);
-        recyclerView2.setAdapter(new SectionTwoAdapter(this, sectionTwoArticles));
+        recyclerView2.setAdapter(new SectionTwoAdapter(context, sectionTwoArticles));
 
         LinearLayoutManager lm3 = new LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false);
         recyclerView3.setLayoutManager(lm3);
-        recyclerView3.setAdapter(new SectionThreeAdapter(this, sectionThreeArticles));
+        recyclerView3.setAdapter(new SectionThreeAdapter(context, sectionThreeArticles));
     }
 
     private void bindView() {
         toolbar = findViewById(R.id.toolbar);
+        navigation = findViewById(R.id.navigation);
 
         recyclerView1 = findViewById(R.id.recyclerView1);
         recyclerView2 = findViewById(R.id.recyclerView2);
