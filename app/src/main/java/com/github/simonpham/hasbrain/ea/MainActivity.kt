@@ -9,7 +9,19 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    private val adapter: MixAdapter by lazy {
+    private val adapterSec1: MixAdapter by lazy {
+        MixAdapter.Builder {
+            withModel<SectionOne> { ItemSectionOneViewHolder.Factory() }
+        }.build()
+    }
+
+    private val adapterSec2: MixAdapter by lazy {
+        MixAdapter.Builder {
+            withModel<SectionOne> { ItemSectionOneViewHolder.Factory() }
+        }.build()
+    }
+
+    private val adapterSec3: MixAdapter by lazy {
         MixAdapter.Builder {
             withModel<SectionOne> { ItemSectionOneViewHolder.Factory() }
         }.build()
@@ -50,21 +62,20 @@ class MainActivity : AppCompatActivity() {
 
         val lm1 = LinearLayoutManager(applicationContext, LinearLayoutManager.HORIZONTAL, false)
         recyclerView1.layoutManager = lm1
-        recyclerView1.adapter = adapter
+        recyclerView1.adapter = adapterSec1
 
         val lm2 = LinearLayoutManager(applicationContext, LinearLayoutManager.HORIZONTAL, false)
         recyclerView2.layoutManager = lm2
-        recyclerView2.adapter = adapter
+        recyclerView2.adapter = adapterSec2
 
         val lm3 = LinearLayoutManager(applicationContext, LinearLayoutManager.VERTICAL, false)
         recyclerView3.layoutManager = lm3
-        recyclerView3.adapter = adapter
+        recyclerView3.adapter = adapterSec3
 
-        val data = ArrayList<SectionOne>()
-        data.add(SectionOne("Introduction to Data Engineering", R.drawable.sec1_1))
-        data.add(SectionOne("How to Become a Data Engineer", R.drawable.sec1_2))
-
-        adapter.setData(data)
+        val dataSec1 = ArrayList<SectionOne>()
+        dataSec1.add(SectionOne("Introduction to Data Engineering", R.drawable.sec1_1))
+        dataSec1.add(SectionOne("How to Become a Data Engineer", R.drawable.sec1_2))
+        adapterSec1.setData(dataSec1)
 
     }
 
