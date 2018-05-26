@@ -101,6 +101,24 @@ class MainActivity : AppCompatActivity() {
                         R.drawable.sec1_2,
                         "https://dzone.com/articles/how-to-become-a-data-engineer"
                 ))
+        dataSec1.add(
+                SectionOne(
+                        "A Beginner’s Guide to Data Engineering — Part I",
+                        R.drawable.sec1_3,
+                        "https://medium.com/@rchang/a-beginners-guide-to-data-engineering-part-i-4227c5c457d7"
+                ))
+        dataSec1.add(
+                SectionOne(
+                        "A Beginner’s Guide to Data Engineering — Part II",
+                        R.drawable.sec1_4,
+                        "https://medium.com/@rchang/a-beginners-guide-to-data-engineering-part-ii-47c4e7cbda71"
+                ))
+        dataSec1.add(
+                SectionOne(
+                        "Functional Data Engineering — a modern paradigm for batch data processing",
+                        R.drawable.sec1_5,
+                        "https://medium.com/@maximebeauchemin/functional-data-engineering-a-modern-paradigm-for-batch-data-processing-2327ec32c42a"
+                ))
 
         // Continue learning's articles
         dataSec2.add(
