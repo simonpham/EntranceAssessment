@@ -1,7 +1,5 @@
 package com.github.simonpham.hasbrain.eaj.model;
 
-import static com.github.simonpham.hasbrain.eaj.util.Const.NO_IMAGE;
-
 /**
  * Created by Simon Pham on 5/26/18.
  * Email: simonpham.dn@gmail.com
@@ -11,26 +9,16 @@ public class Article {
     private String title;
     private int idImage;
     private String articleUrl;
+    private String author;
+    private int idAvatar;
     private long timestamp;
 
-    public Article(String title, int idImage, String articleUrl, long timestamp) {
+    public Article(String title, int idImage, String articleUrl, String author, int idAvatar, long timestamp) {
         this.title = title;
         this.idImage = idImage;
         this.articleUrl = articleUrl;
-        this.timestamp = timestamp;
-    }
-
-    public Article(String title, String articleUrl, long timestamp) {
-        this.title = title;
-        this.idImage = NO_IMAGE;
-        this.articleUrl = articleUrl;
-        this.timestamp = timestamp;
-    }
-
-    public Article(String title, long timestamp) {
-        this.title = title;
-        this.idImage = NO_IMAGE;
-        this.articleUrl = "about:blank";
+        this.author = author;
+        this.idAvatar = idAvatar;
         this.timestamp = timestamp;
     }
 
@@ -64,5 +52,21 @@ public class Article {
 
     public void setTimestamp(long timestamp) {
         this.timestamp = timestamp;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public int getIdAvatar() {
+        return idAvatar;
+    }
+
+    public void setIdAvatar(int idAvatar) {
+        this.idAvatar = idAvatar;
     }
 }

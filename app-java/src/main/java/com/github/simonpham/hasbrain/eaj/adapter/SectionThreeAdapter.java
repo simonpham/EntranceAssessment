@@ -35,6 +35,7 @@ public class SectionThreeAdapter extends RecyclerView.Adapter<SectionThreeAdapte
 
         TextView tvTitle;
         TextView tvTime;
+        TextView tvName;
 
         ImageView btnSave;
 
@@ -45,6 +46,7 @@ public class SectionThreeAdapter extends RecyclerView.Adapter<SectionThreeAdapte
 
             tvTitle = v.findViewById(R.id.tvTitle);
             tvTime = v.findViewById(R.id.tvTime);
+            tvName = v.findViewById(R.id.tvName);
 
             btnSave = v.findViewById(R.id.btnSave);
         }
@@ -74,6 +76,7 @@ public class SectionThreeAdapter extends RecyclerView.Adapter<SectionThreeAdapte
 
         holder.tvTitle.setText(listArticle.get(position).getTitle());
         holder.tvTime.setText(getDisplayTime(listArticle.get(position).getTimestamp()));
+        holder.tvName.setText(listArticle.get(position).getAuthor());
 
         if (listArticle.get(position).getIdImage() == NO_IMAGE) {
             holder.ivImage.setVisibility(View.GONE);

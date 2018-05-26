@@ -20,6 +20,8 @@ import com.github.simonpham.hasbrain.eaj.model.Article;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.github.simonpham.hasbrain.eaj.util.Const.NO_IMAGE;
+
 public class MainActivity extends AppCompatActivity {
 
     private Context context;
@@ -114,6 +116,8 @@ public class MainActivity extends AppCompatActivity {
                         "Introduction to Data Engineering",
                         R.drawable.sec1_1,
                         "https://github.com/hopelessoptimism/data-engineering-101",
+                        "Simon Pham",
+                        R.drawable.avatar,
                         1527344544
                 ));
         sectionOneArticles.add(
@@ -121,6 +125,8 @@ public class MainActivity extends AppCompatActivity {
                         "How to Become a Data Engineer",
                         R.drawable.sec1_2,
                         "https://dzone.com/articles/how-to-become-a-data-engineer",
+                        "Simon Pham",
+                        R.drawable.avatar,
                         1527344544
                 ));
         sectionOneArticles.add(
@@ -128,6 +134,8 @@ public class MainActivity extends AppCompatActivity {
                         "A Beginner’s Guide to Data Engineering — Part I",
                         R.drawable.sec1_3,
                         "https://medium.com/@rchang/a-beginners-guide-to-data-engineering-part-i-4227c5c457d7",
+                        "Simon Pham",
+                        R.drawable.avatar,
                         1527344544
                 ));
         sectionOneArticles.add(
@@ -135,6 +143,8 @@ public class MainActivity extends AppCompatActivity {
                         "A Beginner’s Guide to Data Engineering — Part II",
                         R.drawable.sec1_4,
                         "https://medium.com/@rchang/a-beginners-guide-to-data-engineering-part-ii-47c4e7cbda71",
+                        "Simon Pham",
+                        R.drawable.avatar,
                         1527344544
                 ));
         sectionOneArticles.add(
@@ -142,6 +152,8 @@ public class MainActivity extends AppCompatActivity {
                         "Functional Data Engineering — a modern paradigm for batch data processing",
                         R.drawable.sec1_5,
                         "https://medium.com/@maximebeauchemin/functional-data-engineering-a-modern-paradigm-for-batch-data-processing-2327ec32c42a",
+                        "Simon Pham",
+                        R.drawable.avatar,
                         1527344544
                 ));
 
@@ -151,6 +163,8 @@ public class MainActivity extends AppCompatActivity {
                         "GAN with Keras: Application to Image Deblurring",
                         R.drawable.sec2_1,
                         "https://blog.sicara.com/keras-generative-adversarial-networks-image-deblurring-45e3ab6977b5",
+                        "Simon Pham",
+                        R.drawable.avatar,
                         1527344544
                 ));
         sectionTwoArticles.add(
@@ -158,6 +172,8 @@ public class MainActivity extends AppCompatActivity {
                         "What are Bloom filters?",
                         R.drawable.sec2_2,
                         "https://blog.medium.com/what-are-bloom-filters-1ec2a50c68ff",
+                        "Simon Pham",
+                        R.drawable.avatar,
                         1527344544
                 ));
         sectionTwoArticles.add(
@@ -165,6 +181,8 @@ public class MainActivity extends AppCompatActivity {
                         "The Data Engineering Ecosystem: An Interactive Map",
                         R.drawable.sec2_3,
                         "https://blog.insightdatascience.com/the-data-engineering-ecosystem-an-interactive-map-b682627c2534",
+                        "Simon Pham",
+                        R.drawable.avatar,
                         1527344544
                 ));
         sectionTwoArticles.add(
@@ -172,6 +190,8 @@ public class MainActivity extends AppCompatActivity {
                         "The Future of Data Engineering",
                         R.drawable.sec2_4,
                         "https://medium.com/dima-korolev/the-future-of-data-engineering-3e3cb5dc3293",
+                        "Simon Pham",
+                        R.drawable.avatar,
                         1527344544
                 ));
         sectionTwoArticles.add(
@@ -179,6 +199,8 @@ public class MainActivity extends AppCompatActivity {
                         "Custom Data Analytics And Data Engineering",
                         R.drawable.sec2_5,
                         "https://medium.com/@SeattleDataGuy/custom-data-analytics-and-data-engineering-9d85c2033965",
+                        "Simon Pham",
+                        R.drawable.avatar,
                         1527344544
                 ));
 
@@ -188,6 +210,8 @@ public class MainActivity extends AppCompatActivity {
                         "Understanding Machine Learning - with pictures of cats and dogs",
                         R.drawable.sec3_1,
                         "https://medium.com/velocity-vlcty/understanding-machine-learning-with-pictures-of-cats-and-dogs-536e1c712d52",
+                        "Simon Pham",
+                        R.drawable.avatar,
                         1527344544
                 ));
         sectionThreeArticles.add(
@@ -195,12 +219,17 @@ public class MainActivity extends AppCompatActivity {
                         "Machine Learning for Humans \uD83E\uDD16\uD83D\uDC76",
                         R.drawable.sec3_2,
                         "https://medium.com/machine-learning-for-humans/why-machine-learning-matters-6164faf1df12",
+                        "Simon Pham",
+                        R.drawable.avatar,
                         1527344544
                 ));
         sectionThreeArticles.add(
                 new Article(
                         "Cheat Sheets for AI, Neural Networks, Machine Learning, Deep Learning & Big Data",
+                        NO_IMAGE,
                         "https://becominghuman.ai/cheat-sheets-for-ai-neural-networks-machine-learning-deep-learning-big-data-678c51b4b463",
+                        "Simon Pham",
+                        R.drawable.avatar,
                         1527344544
                 ));
         sectionThreeArticles.add(
@@ -208,6 +237,8 @@ public class MainActivity extends AppCompatActivity {
                         "Machine Learning is Fun!",
                         R.drawable.sec3_3,
                         "https://medium.com/@ageitgey/machine-learning-is-fun-80ea3ec3c471",
+                        "Simon Pham",
+                        R.drawable.avatar,
                         1527344544
                 ));
     }
