@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
     private val adapterSec3: MixAdapter by lazy {
         MixAdapter.Builder {
-            withModel<SectionOne> { ItemSectionOneViewHolder.Factory() }
+            withModel<SectionThree> { ItemSectionThreeViewHolder.Factory() }
         }.build()
     }
 
@@ -81,6 +81,11 @@ class MainActivity : AppCompatActivity() {
         dataSec2.add(SectionTwo("Introduction to Data Engineering", R.drawable.sec1_1))
         dataSec2.add(SectionTwo("How to Become a Data Engineer", R.drawable.sec1_2))
         adapterSec2.setData(dataSec2)
+
+        val dataSec3 = ArrayList<SectionThree>()
+        dataSec3.add(SectionThree("Introduction to Data Engineering", R.drawable.sec1_1))
+        dataSec3.add(SectionThree("How to Become a Data Engineer", R.drawable.sec1_2))
+        adapterSec3.setData(dataSec3)
 
     }
 
