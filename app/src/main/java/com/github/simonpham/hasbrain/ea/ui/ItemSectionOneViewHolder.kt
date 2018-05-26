@@ -46,7 +46,7 @@ class ItemSectionOneViewHolder(itemView: View) : CustomViewHolder<SectionOne>(it
             tvTime.text = "3d ago"
 
             if (idImage == NO_IMAGE) {
-                ivImage.visibility = View.GONE
+                ivImage.visibility = View.INVISIBLE
             } else {
                 ivImage.setImageDrawable(getImage(idImage))
             }
