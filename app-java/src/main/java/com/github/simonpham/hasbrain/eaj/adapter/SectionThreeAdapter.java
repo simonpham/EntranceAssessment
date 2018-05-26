@@ -17,6 +17,7 @@ import com.github.simonpham.hasbrain.eaj.model.Article;
 import java.util.List;
 
 import static com.github.simonpham.hasbrain.eaj.util.Const.NO_IMAGE;
+import static com.github.simonpham.hasbrain.eaj.util.TimeAgo.getDisplayTime;
 
 /**
  * Created by Simon Pham on 5/26/18.
@@ -72,7 +73,7 @@ public class SectionThreeAdapter extends RecyclerView.Adapter<SectionThreeAdapte
         });
 
         holder.tvTitle.setText(listArticle.get(position).getTitle());
-        holder.tvTime.setText("3d ago");
+        holder.tvTime.setText(getDisplayTime(listArticle.get(position).getTimestamp()));
 
         if (listArticle.get(position).getIdImage() == NO_IMAGE) {
             holder.ivImage.setVisibility(View.GONE);

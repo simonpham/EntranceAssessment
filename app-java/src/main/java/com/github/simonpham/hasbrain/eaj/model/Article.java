@@ -11,23 +11,27 @@ public class Article {
     private String title;
     private int idImage;
     private String articleUrl;
+    private long timestamp;
 
-    public Article(String title, int idImage, String articleUrl) {
+    public Article(String title, int idImage, String articleUrl, long timestamp) {
         this.title = title;
         this.idImage = idImage;
         this.articleUrl = articleUrl;
+        this.timestamp = timestamp;
     }
 
-    public Article(String title, String articleUrl) {
+    public Article(String title, String articleUrl, long timestamp) {
         this.title = title;
         this.idImage = NO_IMAGE;
         this.articleUrl = articleUrl;
+        this.timestamp = timestamp;
     }
 
-    public Article(String title) {
+    public Article(String title, long timestamp) {
         this.title = title;
         this.idImage = NO_IMAGE;
         this.articleUrl = "about:blank";
+        this.timestamp = timestamp;
     }
 
     public String getTitle() {
@@ -52,5 +56,13 @@ public class Article {
 
     public void setArticleUrl(String articleUrl) {
         this.articleUrl = articleUrl;
+    }
+
+    public long getTimestamp() {
+        return timestamp;
+    }
+
+    public void setTimestamp(long timestamp) {
+        this.timestamp = timestamp;
     }
 }
