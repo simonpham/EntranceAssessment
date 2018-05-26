@@ -1,10 +1,12 @@
 package com.github.simonpham.hasbrain.ea.ui
 
+import android.content.Intent
 import android.graphics.drawable.Drawable
 import android.support.v7.content.res.AppCompatResources
 import android.view.View
 import com.github.simonpham.hasbrain.ea.NO_IMAGE
 import com.github.simonpham.hasbrain.ea.R
+import com.github.simonpham.hasbrain.ea.ui.browser.BrowserActivity
 import com.github.simonpham.hasbrain.ea.ui.common.AdapterModel
 import com.github.simonpham.hasbrain.ea.ui.common.CustomViewHolder
 import com.github.simonpham.hasbrain.ea.ui.common.ViewHolderFactory
@@ -21,8 +23,9 @@ class ItemSectionTwoViewHolder(itemView: View) : CustomViewHolder<SectionTwo>(it
 
     private val context = itemView.context
 
-    private val tvTitle = itemView.tvTitle
     private val ivImage = itemView.image
+
+    private val tvTitle = itemView.tvTitle
     private val tvName = itemView.tvName
     private val tvTime = itemView.tvTime
 
@@ -44,6 +47,16 @@ class ItemSectionTwoViewHolder(itemView: View) : CustomViewHolder<SectionTwo>(it
                 ivImage.visibility = View.GONE
             } else {
                 ivImage.setImageDrawable(getImage(idImage))
+            }
+
+            val intent = Intent(context, BrowserActivity::class.java)
+            intent.putExtra("MainActivity.ARTICLE_URL", articleUrl)
+
+            ivImage.setOnClickListener {
+                context.startActivity(intent)
+            }
+            tvTitle.setOnClickListener {
+                context.startActivity(intent)
             }
         }
     }
