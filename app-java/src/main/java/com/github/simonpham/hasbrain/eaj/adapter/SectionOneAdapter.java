@@ -40,6 +40,7 @@ public class SectionOneAdapter extends RecyclerView.Adapter<SectionOneAdapter.Vi
         ImageView btnTwitter;
         ImageView btnGithub;
         ImageView btnSave;
+        ImageView btnAvatar;
 
         ViewHolder(View v) {
             super(v);
@@ -53,6 +54,7 @@ public class SectionOneAdapter extends RecyclerView.Adapter<SectionOneAdapter.Vi
             btnTwitter = v.findViewById(R.id.btnTwitter);
             btnGithub = v.findViewById(R.id.btnGithub);
             btnSave = v.findViewById(R.id.btnSave);
+            btnAvatar = v.findViewById(R.id.btnAvatar);
         }
     }
 
@@ -101,6 +103,7 @@ public class SectionOneAdapter extends RecyclerView.Adapter<SectionOneAdapter.Vi
 
         holder.tvTitle.setText(listArticle.get(position).getTitle());
         holder.tvTime.setText(getDisplayTime(listArticle.get(position).getTimestamp()));
+        holder.btnAvatar.setImageDrawable(context.getResources().getDrawable(listArticle.get(position).getIdAvatar()));
 
         if (listArticle.get(position).getIdImage() == NO_IMAGE) {
             holder.ivImage.setVisibility(View.INVISIBLE);

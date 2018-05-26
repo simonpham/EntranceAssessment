@@ -38,6 +38,7 @@ public class SectionTwoAdapter extends RecyclerView.Adapter<SectionTwoAdapter.Vi
         TextView tvName;
 
         ImageView btnSave;
+        ImageView btnAvatar;
 
         ViewHolder(View v) {
             super(v);
@@ -49,6 +50,7 @@ public class SectionTwoAdapter extends RecyclerView.Adapter<SectionTwoAdapter.Vi
             tvName = v.findViewById(R.id.tvName);
 
             btnSave = v.findViewById(R.id.btnSave);
+            btnAvatar = v.findViewById(R.id.btnAvatar);
         }
     }
 
@@ -77,6 +79,7 @@ public class SectionTwoAdapter extends RecyclerView.Adapter<SectionTwoAdapter.Vi
         holder.tvTitle.setText(listArticle.get(position).getTitle());
         holder.tvTime.setText(getDisplayTime(listArticle.get(position).getTimestamp()));
         holder.tvName.setText(listArticle.get(position).getAuthor());
+        holder.btnAvatar.setImageDrawable(context.getResources().getDrawable(listArticle.get(position).getIdAvatar()));
 
         if (listArticle.get(position).getIdImage() == NO_IMAGE) {
             holder.ivImage.setVisibility(View.INVISIBLE);
