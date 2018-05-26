@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Entrance Assessment</string>
+
+    <string name="title_explore">Explore</string>
+    <string name="title_saved">Saved</string>
+    <string name="title_me">Me</string>
+    <string name="title_quest">Quest</string>
+    <string name="title_inbox">Inbox</string>
+</resources>
